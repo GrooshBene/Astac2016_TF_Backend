@@ -41,16 +41,27 @@ function init(app, User, Place){
                     console.log('/place/update err');
                     throw err;
                 }
-                console.log("Place "+ req.param('place_id')+ "Updated + "result);
+                console.log("Place "+ req.param('place_id')+ "Updated + "+result);
                 res.send(200, result);
 
         })
     });
 
-    app.get('/place/:place_id', function (req, res) {
-        Place.findOne({_id : req.param('place_id')},function (err, result) {
+    app.get('/review/:place_id', function (req, res) {
+        Place.find({_id : req.param('place_id')},function (err, result) {
             if(err){
                 console.log('/place/{place_id} err');
+                throw err;
+            }
+            console.log("Founded : "+ result);
+            res.send(200, result);
+        })
+    });
+
+    app.post('/me/review', function (req, res) {
+        Review.find({writer_id : req.param('id')}, function (err, result) {
+            if(err){
+                console.log("/me/review err");
                 throw err;
             }
             console.log("Founded : "+ result);

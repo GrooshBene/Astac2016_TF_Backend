@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d33a67ba-05d2-493a-bd7f-6c4de6603f7f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/oauth.js" afterPath="$PROJECT_DIR$/route/oauth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/place.js" afterPath="$PROJECT_DIR$/route/place.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/review.js" afterPath="$PROJECT_DIR$/route/review.js" />
     </list>
     <ignored path="stac2016_TF_Backend.iws" />
@@ -29,8 +31,8 @@
           <file leaf-file-name="oauth.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/route/oauth.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1725">
-                  <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+                <state relative-caret-position="489">
+                  <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#42#0" expanded="false" />
                   </folding>
@@ -41,11 +43,10 @@
           <file leaf-file-name="review.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/route/review.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="774">
-                  <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+                <state relative-caret-position="624">
+                  <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#42#0" expanded="false" />
-                    <marker date="1470490237000" expanded="true" signature="1034:1504" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -54,9 +55,11 @@
           <file leaf-file-name="place.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/route/place.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="360">
+                  <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#42#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -68,8 +71,8 @@
           <file leaf-file-name="oauth.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/route/oauth.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="759">
-                  <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+                <state relative-caret-position="294">
+                  <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#42#0" expanded="false" />
                   </folding>
@@ -80,7 +83,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="729">
+                <state relative-caret-position="714">
                   <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
                   <folding />
                 </state>
@@ -109,9 +112,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/route/place.js" />
-        <option value="$PROJECT_DIR$/route/oauth.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/route/oauth.js" />
+        <option value="$PROJECT_DIR$/route/place.js" />
         <option value="$PROJECT_DIR$/route/review.js" />
       </list>
     </option>
@@ -602,12 +605,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470488454332</updated>
-      <workItem from="1470488459106" duration="1772000" />
+      <workItem from="1470488459106" duration="2324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1772000" />
+    <option name="totallyTimeSpent" value="2324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="527" y="0" width="913" height="900" extended-state="0" />
@@ -649,17 +652,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/route/place.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
+        <state relative-caret-position="714">
           <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
           <folding />
         </state>
@@ -667,8 +662,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/route/oauth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+        <state relative-caret-position="489">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route/place.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
@@ -677,11 +682,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/route/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="624">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <marker date="1470490237000" expanded="true" signature="1034:1504" ph="{...}" />
           </folding>
         </state>
       </provider>

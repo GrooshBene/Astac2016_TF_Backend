@@ -116,6 +116,17 @@ function init(app, User, randomString){
             res.send(200, result);
         }).remove();
     });
+    
+    app.post('/me/info', function (req, res) {
+        User.findOne({_id : req.param('id')}, function (err, result) {
+            if(err){
+                console.log("/me/info err");
+                throw err;
+            }
+            console.log('Founded : '+ result);
+            res.send(200, result);
+        })
+    });
 
     //function end
 }
