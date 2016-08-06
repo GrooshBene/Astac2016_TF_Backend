@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d33a67ba-05d2-493a-bd7f-6c4de6603f7f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/oauth.js" afterPath="$PROJECT_DIR$/route/oauth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/place.js" afterPath="$PROJECT_DIR$/route/place.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/review.js" afterPath="$PROJECT_DIR$/route/review.js" />
-    </list>
+    <list default="true" id="d33a67ba-05d2-493a-bd7f-6c4de6603f7f" name="Default" comment="" />
     <ignored path="stac2016_TF_Backend.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,8 +39,8 @@
           <file leaf-file-name="review.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/route/review.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+                <state relative-caret-position="534">
+                  <caret line="61" column="49" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="49" />
                   <folding>
                     <element signature="e#0#42#0" expanded="false" />
                   </folding>
@@ -71,8 +67,8 @@
           <file leaf-file-name="oauth.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/route/oauth.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+                <state relative-caret-position="570">
+                  <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#42#0" expanded="false" />
                   </folding>
@@ -605,12 +601,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470488454332</updated>
-      <workItem from="1470488459106" duration="2324000" />
+      <workItem from="1470488459106" duration="2598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2324000" />
+    <option name="totallyTimeSpent" value="2598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="527" y="0" width="913" height="900" extended-state="0" />
@@ -660,16 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/route/oauth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/route/place.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -682,8 +668,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/route/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="534">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route/oauth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
