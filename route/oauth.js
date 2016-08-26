@@ -128,5 +128,16 @@ function init(app, User, randomString){
         })
     });
 
+    app.post('/me/review', function (req, res) {
+        Review.find({writer_id : req.param('id')}, function (err, result) {
+            if(err){
+                console.log("/me/review err");
+                throw err;
+            }
+            console.log("Founded : "+ result);
+            res.send(200, result);
+        })
+    })
+
     //function end
 }

@@ -63,6 +63,6 @@ console.log('Server Running At Port 8080');
 
 require('./route/oauth')(app, User, randomString);
 
-require('./route/place')(app,User, Place, randomString);
+require('./route/place')(app, User, Place, randomString);
 
-require('./route/review')(app, Review, User, randomString);
+require('./route/review')(app, Review, User, Place,randomString);
