@@ -110,6 +110,18 @@
 
 
 
+* /place/list : Place List - POST
+
+> Requiring params
+
+>> none
+
+> Response
+
+>> Place Schema List
+
+
+
 * /place/add : Place Adding (ONLY FOR SELLER) - POST
 
 > Requiring params

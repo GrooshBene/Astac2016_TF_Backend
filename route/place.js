@@ -32,6 +32,18 @@ function init(app, User, Place){
         })
     });
 
+    app.post('/place/list', function (req, res) {
+        Place.find({}, function (err, result) {
+            if(err){
+                console.log('/place/list err');
+
+                throw err;
+            }
+            console.log("Place List : " + result);
+            res.send(200, result);
+        });
+    });
+
     app.post('/place/update', function (req, res) {
         Place.update({_id : req.param('place_id')}, {
             place_silence : req.param('place_silence'),
@@ -45,7 +57,7 @@ function init(app, User, Place){
                 console.log("Place "+ req.param('place_id')+ "Updated + "+result);
                 res.send(200, result);
 
-        })
+        });
     });
 
     app.get('/place/:place_id', function (req, res) {
