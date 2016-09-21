@@ -3,7 +3,7 @@
  */
 module.exports = init;
 
-function init(app, Review, User, Place, randomString) {
+function init(app, Review, Place, randomString) {
     app.post('/review/write', function (req, res) {
         var average_temp = 0;
         var review = new Review({
