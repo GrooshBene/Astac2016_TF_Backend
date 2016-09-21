@@ -6,13 +6,14 @@ module.exports = init;
 function init(app, Review, User, Place, randomString) {
     app.post('/review/write', function (req, res) {
         var average_temp = 0;
-        review = new Review({
+        var review = new Review({
             _id : randomString.generate(15),
             place_id : req.param('place_id'),
             writer_id : req.param('writer_id'),
             writer_name : req.param('writer_name'),
             review_content : req.param('review_content'),
-            place_rate : req.param('place_rate')
+            place_rate : req.param('place_rate'),
+            place_theme : req.param('place_theme')
         });
         
         review.save(function (err) {
@@ -42,7 +43,7 @@ function init(app, Review, User, Place, randomString) {
                         throw err;
                     }
                     console.log("Place "+ req.param('place_id') + " Updated : " + result);
-                })
+                });
             })
         })
     });

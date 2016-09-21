@@ -36,6 +36,7 @@ var placeSchema = new schema({
     close_time : String,
     place_silence : Number,
     place_bright : Number,
+    place_temp : Number,
     place_address : String,
     place_category : String,
     seller_talk : String,
@@ -48,7 +49,8 @@ var reviewSchema = new schema({
     writer_id : String,
     writer_name : String,
     review_content : String,
-    place_rate : String
+    place_rate : String,
+    place_theme : String
 });
 
 var User = mongoose.model('user', userSchema);
