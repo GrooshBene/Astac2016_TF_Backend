@@ -191,8 +191,6 @@
 
 > Response
 
-** NEEDS UPDATE PLACE AVERAGE **
-
 >> Review Schema
 
 

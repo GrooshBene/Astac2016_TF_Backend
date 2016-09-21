@@ -37,11 +37,10 @@ function init(app, User, randomString){
                 user = new User({
                     _id: profile.id,
                     name : profile.displayName,
-                    profile: profile.photos,
                     gender : profile.gender,
-                    friends : [],
-                    phone : profile.phone,
-                    average : 0
+                    age : 0,
+                    user_type : "true"
+
                 });
                 user.save(function (err) {
                     if(err) console.log(err);
@@ -78,7 +77,8 @@ function init(app, User, randomString){
             _id : randomString.generate(13),
             id : req.param('user_id'),
             password : req.param('password'),
-            api_token : randomString.generate(15)
+            api_token : randomString.generate(15),
+            user_type : "false"
         });
         user.save(function (err) {
             if(err){
