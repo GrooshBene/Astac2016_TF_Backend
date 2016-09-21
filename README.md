@@ -42,6 +42,8 @@
 
 > place_bright : Place's brightness. Number
 
+> place_temp : Place's Temperature. Number.
+
 > place_address : Place's Stringified Address. String
 
 > place_category : Place's Category. String
@@ -188,6 +190,8 @@
 >> review_content : Review’s contents. (String)
 
 >> place_rate : Place’s rating. (String)
+
+>> place_theme : Place's Theme. (String)
 
 > Response
 
