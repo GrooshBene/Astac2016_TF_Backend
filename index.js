@@ -68,3 +68,5 @@ require('./route/oauth')(app, User, randomString);
 require('./route/place')(app, User, Place, randomString);
 
 require('./route/review')(app, Review, User, Place,randomString);
+
+require('./route/statistic')(app, Review, User, Place, randomString);
