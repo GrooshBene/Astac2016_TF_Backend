@@ -71,6 +71,10 @@ function init(app, User, Place){
         });
     });
 
+    app.get('/place/update/category', function (req, res) {
+
+    })
+
 
     //function end
 }
