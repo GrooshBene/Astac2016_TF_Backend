@@ -72,7 +72,14 @@ function init(app, User, Place){
     });
 
     app.get('/place/update/category', function (req, res) {
-
+        Place.find({_id : req.param('place_id')}, {place_category : req.param('place_category')}, function (err, result) {
+            if(err){
+                console.log('/place/update/category err');
+                throw err;
+            }
+            console.log("Place "+ result.place_name + "'s category updated.");
+            res.send(200, result);
+        })
     })
 
 
