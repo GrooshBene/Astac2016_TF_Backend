@@ -4,7 +4,7 @@
 
 module.exports = init;
 
-function init(app, User, Place){
+function init(app, User, Place, Temp, randomString){
 
     app.post('/place/add', function (req, res) {
         place = new Place({
@@ -60,16 +60,16 @@ function init(app, User, Place){
         });
     });
 
-    app.get('/place/:place_id', function (req, res) {
-        Place.find({_id : req.param('place_id')},function (err, result) {
-            if(err){
-                console.log('/place/{place_id} err');
-                throw err;
-            }
-            console.log("Founded : "+ result);
-            res.send(200, result);
-        });
-    });
+    // app.get('/place/:place_id', function (req, res) {
+    //     Place.find({_id : req.param('place_id')},function (err, result) {
+    //         if(err){
+    //             console.log('/place/{place_id} err');
+    //             throw err;
+    //         }
+    //         console.log("Founded : "+ result);
+    //         res.send(200, result);
+    //     });
+    // });
 
     app.get('/place/update/category', function (req, res) {
         Place.find({_id : req.param('place_id')}, {place_category : req.param('place_category')}, function (err, result) {
@@ -78,6 +78,46 @@ function init(app, User, Place){
                 throw err;
             }
             console.log("Place "+ result.place_name + "'s category updated.");
+            res.send(200, result);
+        })
+    })
+
+    app.get('/place/temp', function (req, res) {
+        Temp.find({_id : 'coex'}, function (err, find_result) {
+            console.log(find_result);
+            if(find_result.length == 0) {
+                temp = new Temp({
+                    _id: 'coex',
+                    info: req.param('info')
+                });
+                temp.save(function (err, silence) {
+                    if (err) {
+                        console.log("/place/info err");
+                        throw err;
+                    }
+                    console.log("Saved");
+                    res.send(200, silence);
+                });
+            }
+            else if(find_result.length !=0){
+                Temp.findOneAndUpdate({_id : 'coex'}, {info : req.param('info')})
+                    .exec(function(err, result){
+                        if(err){
+                            console.log("/place/info Update Error");
+                            throw err;
+                        }
+                        res.send(200, result);
+                    })
+            }
+        });
+    })
+
+    app.post('/place/get/info', function (req, res) {
+        Temp.findOne({_id : 'coex'}, function (err, result) {
+            if(err){
+                console.log('/place/get/info DB Error');
+                throw err;
+            }
             res.send(200, result);
         })
     })

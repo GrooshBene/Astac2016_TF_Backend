@@ -28,6 +28,11 @@ var userSchema = new schema({
     auth_token : String
 });
 
+var tempSchema = new schema({
+    _id : String,
+    info : String
+});
+
 var placeSchema = new schema({
     _id : String,
     place_name : String,
@@ -59,13 +64,15 @@ var Place = mongoose.model('place', placeSchema);
 
 var Review = mongoose.model('review', reviewSchema);
 
+var Temp = mongoose.model('temps', tempSchema);
+
 server.listen(8080);
 
 console.log('Server Running At Port 8080');
 
 require('./route/oauth')(app, User, randomString);
 
-require('./route/place')(app, User, Place, randomString);
+require('./route/place')(app, User, Place, Temp, randomString);
 
 require('./route/review')(app, Review, User, Place,randomString);
 
